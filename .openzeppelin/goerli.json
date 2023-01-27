@@ -1,0 +1,64 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x46F2a4b8b67F8e6870EC18936ffba0BE1Ac5451C",
+    "txHash": "0xf9c63e2a1c8c5446c49557ecfef3c6855a85e59cc38534ec66dea1b5ea7218e1"
+  },
+  "proxies": [
+    {
+      "address": "0xAcD96206feC097C0337eA5F1057B9382290bA70F",
+      "txHash": "0x46659422dd5c59000fadc552f7667cf49288428b8316ff65f8304efb769df659",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "93d23c712814a9961f0bfe8256d6793a0ad0fe40149df23de8f4fafe06173f61": {
+      "address": "0xbf9bC936B670fEef88bB792D835bF7A87BfF17E2",
+      "txHash": "0x7f8979cbb714239d91a504a32cf3142358a2198ebb76a80b629da019ab0b0c14",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "solidity/contracts/proxyTransparent/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "solidity/contracts/proxyTransparent/Initializable.sol:67"
+          },
+          {
+            "label": "admin",
+            "offset": 2,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "PriceFeedTracker",
+            "src": "solidity/contracts/proxyTransparent/transparentProxy.sol:8"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
